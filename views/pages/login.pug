@@ -1,0 +1,14 @@
+extends ../layout
+
+block content
+  h1 Login
+
+  form(method="GET", action="/pages/home")
+    .form-group
+      label Username
+      input.form-control(type="text")
+    .form-group
+      label Password
+      input.form-control(type="password")
+    .form-group
+      input.btn.btn-default(type="submit", value="Log In")
